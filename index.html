@@ -732,7 +732,7 @@
                                 { t: "أجمل صدفة قلبي دق ليها", d: "من اليوم اللي ظهرت فيه في حياتي بقيت حاسة إن الدنيا بتضحكلي.. أنت العوض عن كل حاجة والنعمة اللي بحمد ربنا عليها ❤️", img: "./WhatsApp Image 2026-04-20 at 11.20.25 PM (1).jpeg" },
                                 { t: "عيونك دول دنيتي", d: "الملامح دي والعيون دي خطفوا قلبي من غير ما أحس.. كلامك معايا بيطمني ووجودك هو الحياة بالنسبة لي 😍🫶", img: "./WhatsApp Image 2026-04-20 at 11.20.26 PM (1).jpeg" },
                                 { t: "سندي وأماني", d: "يا أغلى حاجة في دنيتي كلها.. بحبك وهفضل أقولها لآخر يوم في عمري 🫂💖", img: "./WhatsApp Image 2026-04-20 at 11.20.25 PM.jpeg" },
-                                { t: "حبيبي ونصيبي", d: "الخطوبة دي كانت أجمل يوم في حياتي.. عشان بقيت بيك ولك للأبد 💍😍", img: "./WhatsApp Image 2026-04-20 at 11.20.26 PM.jpeg" }
+                                { t: "حبيبي ونصيبي", d: "أنت العوض اللي قلبي كان بيستناه.. ومن يوم ما دبلتك نورت إيدي وأنا حاسة إني ملكت الدنيا كلها بيك 💍♥️", img: "./WhatsApp Image 2026-04-20 at 11.20.26 PM.jpeg" }
                             ].map((item, i) => (
                                 <div key={i} className={`flex mb-24 flex-col md:flex-row ${i % 2 === 0 ? 'md:flex-row-reverse' : ''} items-center group`}>
                                     <div className="md:w-1/2 flex justify-center">
@@ -770,7 +770,7 @@
                                         <source src="./WhatsApp Video 2026-04-20 at 11.20.38 PM.mp4" type="video/mp4" />
                                     </video>
                                 </div>
-                                <div className="absolute bottom-4 left-0 right-0 text-center text-xl md:text-2xl font-script text-rose-400 italic drop-shadow-md bg-black/40 py-2">"كل لحظة معاكي هي أحلى لحظة في حياتي"</div>
+                                <div className="absolute bottom-4 left-0 right-0 text-center text-xl md:text-2xl font-script text-rose-400 italic drop-shadow-md bg-black/40 py-2">"كل لحظة معاك هي أحلى لحظة في حياتي"</div>
                             </div>
                         </div>
                     </section>
@@ -1050,9 +1050,10 @@
 
         function TimeBox({ label, value }) {
             return (
-                <div className="bg-slate-900/60 backdrop-blur-md border border-slate-700 text-rose-400 w-24 sm:w-28 md:w-36 p-4 sm:p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] shadow-[0_10px_30px_rgba(0,0,0,0.5)] transform hover:-translate-y-3 transition-transform hover:border-rose-500/50 hover:shadow-[0_0_20px_rgba(244,63,94,0.3)]">
-                    <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 drop-shadow-sm">{value || 0}</div>
-                    <div className="text-xs md:text-sm font-bold uppercase tracking-widest text-slate-400">{label}</div>
+                <div className="relative bg-white/5 backdrop-blur-md border border-white/20 w-24 sm:w-28 md:w-36 p-5 sm:p-6 md:p-8 rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] overflow-hidden transform hover:-translate-y-2 transition-all duration-300 group hover:border-rose-400/60 hover:shadow-[0_0_40px_rgba(225,29,72,0.4)]">
+                    <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-2 text-transparent bg-clip-text bg-gradient-to-b from-rose-300 to-rose-600 drop-shadow-lg font-sans relative z-10">{value || 0}</div>
+                    <div className="text-xs md:text-sm font-bold tracking-widest text-slate-300 relative z-10">{label}</div>
                 </div>
             );
         }
